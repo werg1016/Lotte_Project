@@ -77,15 +77,19 @@ create Table product_epliogue(
 create Table coupone_kind(
 	coupone_name varchar(255) primary key,
 	discount int
+	term int
 )
 
 create Table coupone(
 	coupone_name varchar(255) ,
 	ID varchar(255),
 	amount int,
-    KEY `ID` (`ID`),
+	start_date date,
+    KEY `ID` (`ID`),	
     KEY `coupone_name` (`coupone_name`)
 )
+
+insert into coupone_kind values('신규고객 쿠폰',20,14);
 
 create table notice(
 	notice_number int ,
@@ -100,3 +104,20 @@ create table category(
 	category_name varchar(255) primary key
 
 )
+
+create table log(
+	ID varchar(255),
+	fuction varchar(255),
+	times date,
+    KEY `ID` (`ID`),
+    KEY `fuction` (`fuction`),
+    KEY `times` (`times`)
+)
+
+create TRIGGER NewMemberCoupone
+AFTER INSERT ON 	member For EACH ROW
+BEGIN
+INSERT into coupone values('신규고객 쿠폰',new.column1,1,CURRENT_TIMESTAMP,7);
+INSERT into log values(new.column1,'회원가입 및 신규쿠폰 발급',CURRENT_TIMESTAMP);
+END;
+

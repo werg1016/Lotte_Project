@@ -49,9 +49,7 @@
             <li>
                 <a href="./join.php">Join</a>
             </li>
-            <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-            </li>
+
             <li>
                 <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
             </li>
@@ -63,7 +61,7 @@
         <div class="text-vertical-center">
             <h1>LOTTE All In One</h1>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">입장하기</a>
+            <a href="./base.php" class="btn btn-dark btn-lg">입장하기</a>
         </div>
     </header>
 
