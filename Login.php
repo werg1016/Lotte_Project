@@ -81,17 +81,17 @@
                 </div>    
                 
                 <div class="row">
-                    <form class="form-horizontal" action="login.jsp" name="myform" method="post">
+                    <form class="form-horizontal" action="./db/Login_check.php" name="myform" method="post">
                         <div class="form-group">
                             <label for="inputEmail3" class="col-sm-2 control-label">ID</label>
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" id="input_id" placeholder="ID" name="login_id">
+                                <input type="text" class="form-control" id="ID" placeholder="ID" name="ID">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
                             <div class="col-sm-3">
-                                <input type="password" class="form-control" id="input_password" placeholder="Password" name="login_pw">
+                                <input type="password" class="form-control" id="PW" placeholder="Password" name="PW">
                             </div>
                         </div>
                         <div class="form-group">
