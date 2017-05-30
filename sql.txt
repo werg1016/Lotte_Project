@@ -1,4 +1,4 @@
-Create Database All Lotte;
+Create Database All_Lotte;
 
 create Table member(
     ID varchar(255) Primary KEY,
@@ -8,14 +8,95 @@ create Table member(
     ID_Card varchar(255),
     Email varchar(255),
     Address varchar(255),
-    Join_Date
+    recive int,
+    Join_Date date
 )
 
-create Table member(
-    Product_number varchar(255),
+create Table product(
+    Product_number int,
+    Product_name varchar(255),
+    maker varchar(255),
+    category varchar(255),
+    Affiliated_company varchar(255),
+  KEY `Product_number` (`Product_number`),
+  KEY `Affiliated_company` (`Affiliated_company`)
+)
+
+create Table price(
+    Product_number double,
     Product_name varchar(255),
     maker varchar(255),
     Affiliated_company varchar(255),
   KEY `Product_number` (`Product_number`),
   KEY `Affiliated_company` (`Affiliated_company`)
+)
+
+
+create Table Affiliated_company(
+    Affiliated_company varchar(255),
+  KEY `Affiliated_company` (`Affiliated_company`)
+)
+
+
+create Table orders(
+    ID varchar(255),
+    orders_number double,
+    Product_number double,
+    Address varchar(255),
+    price varchar(255),
+    amount int,
+    `date` date,
+  KEY `ID` (`ID`),
+  KEY `orders_number` (`orders_number`)
+)
+
+
+create Table barsket(
+    ID varchar(255),
+    barsket_number double,
+    Product_number double,
+    price varchar(255),
+    amount int,
+    `date` date,
+  KEY `ID` (`ID`),
+  KEY `barsket_number` (`barsket_number`)
+)
+
+
+create Table product_epliogue(
+    ID varchar(255),
+    epliouge_number double,
+    epliouge text,
+    Product_number double,
+    `date` date,
+    img mediumblob,
+    KEY `ID` (`ID`),
+    KEY `epliouge_number` (`epliouge_number`)
+	)
+	
+create Table coupone_kind(
+	coupone_name varchar(255) primary key,
+	discount int
+)
+
+create Table coupone(
+	coupone_name varchar(255) ,
+	ID varchar(255),
+	amount int,
+    KEY `ID` (`ID`),
+    KEY `coupone_name` (`coupone_name`)
+)
+
+create table notice(
+	notice_number int ,
+	ID varchar(255),
+	upload_Date date,
+	subject text,
+	content text,
+    KEY `ID` (`notice_number`)
+)
+
+create table category(
+	category_name varchar(255) primary key
+
 )
