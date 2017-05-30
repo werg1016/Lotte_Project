@@ -1,0 +1,21 @@
+Create Database All Lotte;
+
+create Table member(
+    ID varchar(255) Primary KEY,
+    Password varchar(255),
+    Name varchar(255),
+    Phone_Number varchar(255),
+    ID_Card varchar(255),
+    Email varchar(255),
+    Address varchar(255),
+    Join_Date
+)
+
+create Table member(
+    Product_number varchar(255),
+    Product_name varchar(255),
+    maker varchar(255),
+    Affiliated_company varchar(255),
+  KEY `Product_number` (`Product_number`),
+  KEY `Affiliated_company` (`Affiliated_company`)
+)
