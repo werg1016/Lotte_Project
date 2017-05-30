@@ -83,7 +83,7 @@
         </div>
       </div>
       <div class="row">
-        <form class="form-horizontal"  action="Registry.php" name="form" method="post">
+        <form class="form-horizontal"  action="./db/Registry.php" name="form" method="post">
           <div class="form-group">
             <label for="inputEmail3" class="col-sm-3 control-label">ID</label>
             <div class="col-sm-5">

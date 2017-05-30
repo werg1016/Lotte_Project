@@ -8,7 +8,7 @@ create Table member(
     ID_Card varchar(255),
     Email varchar(255),
     Address varchar(255),
-    recive int,
+    recive varchar(255),
     Join_Date date
 )
 
