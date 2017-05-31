@@ -1,0 +1,34 @@
+
+javac -cp jar경로 전체.java
+javac -cp arirang-morph-1.0.0.jar *.java
+
+morpheme 이전경로에서 실행할것 
+java -cp jar경로; 패키지명.파일명 경로
+java -cp arirang-morph-1.0.0.jar; morpheme.Main C:\Users\HeeJin\Deskop\1.txt
+
+  if($Plagiarism == ""){
+
+   echo "<script>
+
+           alert('표절 문서가 비어있습니다..');
+	  history.back();
+          </script>";
+    exit;
+	}
+  
+  if($Original == ""){
+    echo "<script>
+
+           alert('원본 문서가 비어있습니다..');
+	  history.back();
+          </script>";
+    exit;
+	}
+
+
+
+   $output;
+   $return_var;
+
+  exec("java -cp arirang-morph-1.0.3.jar; morpheme.StoSMain . $Plagiarism . ,	 $output, $return_var);
+print_r($output);

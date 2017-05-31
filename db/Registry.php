@@ -1,5 +1,5 @@
 <?
-
+   
    $conn = mysqli_connect("127.0.0.1", "root", "123456", "all_lotte");
    $NAME = $_POST['NAME'];
    $ID = $_POST['ID'];
@@ -31,7 +31,7 @@
    	$insert_query = "INSERT INTO member VALUES('" .$ID . "',HEX(AES_ENCRYPT('" . $PW . "', 'rlagmlwls')),'" . $NAME . "','" . $P_NUMBER . "','" . $ID_CARD . "','" . $Email . "','" . $Address  . "','" . $Recive . "','" . $time . "');";
    	$result = mysqli_query($conn, $insert_query);
     $rs = "java -cp mail.jar; mailsender $Email:Parsing:[LOTTE　AIO　회원가입안내]:Parsing:.$NAME.　회원가입을　진심으로　축하드립니다.";
-    $rs = iconv("UTF-8","EUC-KR",$rs);
+
 	exec($rs);
     echo $rs;
    }	

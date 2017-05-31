@@ -28,7 +28,7 @@ if( isset($_POST["submit"]))
 		{			
 			echo "UploadSuccess!<br>";
 
-			#exec("python androguard\androapp.py -r \"C:/APM_Setup/ftp/apk/" . $_FILES["file"]["name"] . "\"", $output, $return_var);
+			#dexec("python androguard\androapp.py -r \"C:/APM_Setup/ftp/apk/" . $_FILES["file"]["name"] . "\"", $output, $return_var);
 		
 		}
 	}

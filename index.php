@@ -49,9 +49,8 @@
             <li>
                 <a href="./join.php">Join</a>
             </li>
-
             <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+                <a href="./sear.php">Search</a>
             </li>
         </ul>
     </nav>
