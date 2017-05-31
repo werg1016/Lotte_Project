@@ -65,7 +65,10 @@ def vector(aA,bB):
 if __name__ == "__main__" :
     filename1 = open(sys.argv[1])
     content1 = filename1.read()
+    content2 = ""
 
-    filename2 = open(sys.argv[2])
-    content2 = filename2.read()
+    a = len(sys.argv)
+    for i in range(2,a):
+        content2 = content2 + sys.argv[i] +" "
+
     main(content1,content2)

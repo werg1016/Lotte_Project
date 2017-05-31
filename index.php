@@ -38,16 +38,19 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>LOTTE All in One</a>
+                <a>LOTTE All in One</a>
             </li>
             <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+                <a href="./index.php">Home</a>
             </li>
             <li>
                 <a href="./Login.php">Login</a>
             </li>
             <li>
                 <a href="./join.php">Join</a>
+            </li>
+            <li>
+                <a href="./base.php">Email</a>
             </li>
             <li>
                 <a href="./sear.php">Search</a>
@@ -60,7 +63,7 @@
         <div class="text-vertical-center">
             <h1>LOTTE All In One</h1>
             <br>
-            <a href="./base.php" class="btn btn-dark btn-lg">입장하기</a>
+            <a href="./sear.php" class="btn btn-dark btn-lg">입장하기</a>
         </div>
     </header>
 

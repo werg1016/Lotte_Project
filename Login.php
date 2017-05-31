@@ -32,28 +32,28 @@
 
 <body>
 
-    <!-- Navigation -->
+   <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+                <a>LOTTE All in One</a>
             </li>
             <li>
-                <a href="./index.php">home</a>
+                <a href="./index.php">Home</a>
             </li>
             <li>
-                <a href="#">Login</a>
+                <a href="./Login.php">Login</a>
             </li>
             <li>
                 <a href="./join.php">Join</a>
             </li>
             <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+                <a href="./base.php">Email</a>
             </li>
             <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+                <a href="./sear.php">Search</a>
             </li>
         </ul>
     </nav>

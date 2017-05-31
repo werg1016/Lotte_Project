@@ -27,9 +27,19 @@ if( isset($_POST["submit"]))
 		else
 		{			
 			echo "UploadSuccess!<br>";
-
-			#dexec("python androguard\androapp.py -r \"C:/APM_Setup/ftp/apk/" . $_FILES["file"]["name"] . "\"", $output, $return_var);
-		
+			$conn = mysqli_connect("127.0.0.1", "root", "123456", "all_lotte");
+			$select_query = "select * from member where recive = 'on'";
+			$result = mysqli_query($conn, $select_query);
+			$Email="";
+			$j = 0;
+			while ($row = mysqli_fetch_assoc($result)){
+				$Email = $Email ."". $row['Email'] .",";
+				$j++;
+			}
+			$server_file = "C:/" .$server_file;
+			$rs = "java -cp mail.jar; mailsend $Email:Parsing:[LOTTE]:Parsing:$server_file";
+			exec($rs);
+			echo $rs;
 		}
 	}
 }

@@ -33,7 +33,7 @@
     $rs = "java -cp mail.jar; mailsender $Email:Parsing:[LOTTE　AIO　회원가입안내]:Parsing:.$NAME.　회원가입을　진심으로　축하드립니다.";
 
 	exec($rs);
-    echo $rs;
+
    }	
 
 
