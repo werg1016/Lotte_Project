@@ -66,7 +66,7 @@ header("Content-Type:text/html;charset=euc-kr");
 
 		<article>
 			<center>
-				<form method="post" action="./db/Search.php">
+				<form method="post" action="./db/testSearch.php">
 					Content : <input type="text" id="search" name="search" size="40"/>
 					<br><br>
 					<input type="submit" name="submit" value="Search" />
